@@ -1,0 +1,31 @@
+<!ELEMENT store (store_detail,songs)>
+<!ATTLIST store xmlns:xsi CDATA #REQUIRED>
+<!ATTLIST store xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ELEMENT store_detail (Name,address,telephone,website,email,logo)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT telephone (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT logo EMPTY>
+<!ELEMENT songs (jazz,rock,country,pop,dubstep)>
+<!ELEMENT jazz (song)+>
+<!ATTLIST jazz GenreID ID #REQUIRED>
+<!ELEMENT rock (song)+>
+<!ATTLIST rock GenreID ID #REQUIRED>
+<!ELEMENT country (song)+>
+<!ATTLIST country GenreID ID #REQUIRED>
+<!ELEMENT pop (song)+>
+<!ATTLIST pop GenreID ID #REQUIRED>
+<!ELEMENT dubstep (song)+>
+<!ATTLIST dubstep GenreID ID #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT song (name,director,director_info,producer,writer,released,length)>
+<!ATTLIST song id ID #REQUIRED>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT director_info (age)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT released (#PCDATA)>
+<!ELEMENT length (#PCDATA)>

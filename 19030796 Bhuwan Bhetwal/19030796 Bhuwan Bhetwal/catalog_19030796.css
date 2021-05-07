@@ -1,0 +1,278 @@
+store {
+	position: relative;
+	display: block;
+	margin: auto;
+	background-image: url("./Resources/music1.jpg");
+	background-repeat: no-repeat;
+	background-size: 105% 99%;
+	opacity: 1;
+}
+
+logo {
+	background-image: url("./Resources/logo.png");
+	display: block;
+	top: 0px;
+	position: absolute;
+	background-size: 220px 121px;
+	background-position: absolute;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 70%;
+	margin-left: 1em;
+	margin-top: 2em;
+	
+}
+
+store_detail {
+	height: 15%; 
+	width: 100%;
+	background-color: #42bfcf;
+	display: block;
+	color: whitesmoke;
+	text-shadow: black 5px 0px 5px;
+	border-bottom: #24c215 4px solid;
+	top: 20%;
+	left: 20%;
+	padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+store_detail Name, address, telephone, website ,email{
+	display: inline-block;
+	font-size: 25;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+	padding: 5px;
+	margin-left: 80%;
+}
+
+songs {
+	height: 80%;
+	width: 65%;
+	display: block;
+	margin: auto;
+    font-size: 35;
+	font-weight: bold;
+}
+
+song * {
+	display: list-item;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+	font-size: 15;
+	color: whitesmoke;
+}
+
+song name {
+    font-family: monospace;
+	font-size: 40px;
+	display: block;
+    text-decoration-line: overline underline;
+	text-decoration-style: solid;
+	font-weight: bolder;
+	font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+jazz::before {
+    font-family: monospace;
+	font-size: 50px;
+	font-style: bold;
+	text-shadow: black 5px 0px 5px;
+	margin-bottom: 5px;
+	color: #6b86b6;
+	display: block;
+	text-align: center;
+    content: "Jazz";
+    background-position-x: center;
+}
+
+rock::before {
+    font-family: monospace;
+	font-size: 50px;
+	font-style: bold;
+	text-shadow: black 5px 0px 5px;
+	margin-bottom: 5px;
+	color: #ac2222;
+	display: block;
+	text-align: center;
+    content: "ROCK";
+    background-position-x: center;
+    
+}
+
+country::before {
+    font-family: monospace;
+	font-size: 50px;
+	font-style: bold;
+	text-shadow: black 5px 0px 5px;
+	margin-bottom: 5px;
+	color: #459211;
+	display: block;
+	text-align: center;
+    content: "COUNTRY MUSIC";
+    background-position-x: center;
+}
+
+pop::before {
+    font-family: monospace;
+	font-size: 50px;
+	font-style: bold;
+	text-shadow: black 5px 0px 5px;
+	margin-bottom: 5px;
+	color: #b6c52f;
+	display: block;
+	text-align: center;
+    content: "POP MUSIC";
+    background-position-x: center;
+}
+
+
+dubstep::before {
+    font-family: monospace;
+	font-size: 50px;
+	font-style: bold;
+	text-shadow: black 5px 0px 5px;
+	margin-bottom: 5px;
+	color: #9c266f;
+	display: block;
+	text-align: center;
+    content: "DUBSTEP";
+    background-position-x: center;
+}
+
+jazz,
+rock, 
+country,
+pop,
+dubstep {
+	position: relative;
+    display: block;
+    background-position-x: center;
+	padding: 20px;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .2);
+}
+
+song {
+	position: relative;
+	display: inline-block;
+	margin: 1em 3em;
+	margin-top: 2px;
+	vertical-align: top;
+}
+
+length {
+	background-color: black;
+}
+jazz{
+	background-image: url(https://thecaesura.files.wordpress.com/2016/06/dixie_jazz_5.jpg);
+	box-shadow: 5px 15px 40px black;
+	border-radius: 20px;
+}
+rock{
+	background-image:url(images/rock.PNG);
+	box-shadow: 5px 15px 40px black;
+	border-radius: 20px;
+	
+	
+}
+country{
+	background-image: url(https://grizzlyrose.com/wp-content/uploads/2016/05/Birthplace-of-Country-Music.jpg);
+	box-shadow: 5px 15px 40px black;
+	border-radius: 20px;
+}
+pop{
+	background-image: url(https://img3.stockfresh.com/files/n/nicemonkey/m/62/323252_stock-photo-silhouette-concert-crowd.jpg);
+	height: 460px;
+	box-shadow: 5px 15px 40px black;
+	border-radius: 20px;
+}
+dubstep{
+	background-image: url(images/dubstep.PNG);
+	box-shadow: 5px 15px 40px black;
+	border-radius: 20px;
+	
+
+}
+store_detail{
+	background-image: url(https://thumbs.gfycat.com/AcclaimedHeartfeltGoat-size_restricted.gif);
+}
+
+name::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: #00B1FF;
+	transition: width .4s;
+ 
+  }
+  name:hover::after{
+	width: 100%;
+	transition: width .4s;
+ 
+  }
+
+  address::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: #00B1FF;
+	transition: width .4s;
+ 
+  }
+  address:hover::after{
+	width: 100%;
+	transition: width .4s;
+ 
+  }
+
+  telephone::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: #00B1FF;
+	transition: width .4s;
+ 
+  }
+  telephone:hover::after{
+	width: 100%;
+	transition: width .4s;
+ 
+  }
+
+  website::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: #00B1FF;
+	transition: width .4s;
+ 
+  }
+  website:hover::after{
+	width: 100%;
+	transition: width .4s;
+ 
+  }
+
+  email::after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 4px;
+	background: #00B1FF;
+	transition: width .4s;
+ 
+  }
+  email:hover::after{
+	width: 100%;
+	transition: width .4s;
+ 
+  }

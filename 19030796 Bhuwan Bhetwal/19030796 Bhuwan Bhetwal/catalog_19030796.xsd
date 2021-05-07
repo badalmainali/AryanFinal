@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Simple elements -->
+    <xs:element name="Name" type="xs:string" />
+    <xs:element name="address" type="xs:string" />
+    <xs:element name="telephone" type="xs:string" />
+    <xs:element name="website" type="xs:string" />
+    <xs:element name="email" type="xs:string" />
+    <xs:element name="logo" type="xs:anyURI" />
+    <xs:element name="name" type="xs:string" />
+    <xs:element name="director" type="xs:string" />
+    <xs:element name="producer" type="xs:string" />
+    <xs:element name="writer" type="xs:string" />
+    <xs:element name="released" type="xs:integer" />
+    <xs:element name="length" type="xs:string" />
+
+    <!-- Simple types -->
+    <xs:element name="age">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="56"/>
+                <xs:enumeration value="50"/>
+                <xs:enumeration value="49"/>
+                <xs:enumeration value="63"/>
+                <xs:enumeration value="67"/>
+                <xs:enumeration value="71"/>
+                <xs:enumeration value="46"/>
+                <xs:enumeration value="68"/>
+                <xs:enumeration value="56"/>
+                <xs:enumeration value="69"/>
+                <xs:enumeration value="73"/>
+                <xs:enumeration value="66"/>
+                <xs:enumeration value="55"/>
+                <xs:enumeration value="39"/>
+                <xs:enumeration value="75"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <!-- Attributes -->
+    <xs:attribute name="id" type="xs:ID" />
+    <xs:attribute name="GenreID" type="xs:ID" />
+
+    <!-- Complex types -->
+    <xs:element name="director_info">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="age" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="song">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="name"/>
+                <xs:element ref="director" />
+                <xs:element ref="director_info" />
+                <xs:element ref="producer" />
+                <xs:element ref="writer" />
+                <xs:element ref="released" />
+                <xs:element ref="length" />
+            </xs:sequence>
+            <xs:attribute ref="id" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="jazz">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="GenreID" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="rock">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="GenreID" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="country">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="GenreID" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pop">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="GenreID" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="dubstep">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="song" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+            <xs:attribute ref="GenreID" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="store_detail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Name" />
+                <xs:element ref="address" />
+                <xs:element ref="telephone" />
+                <xs:element ref="website" />
+                <xs:element ref="email" />
+                <xs:element ref="logo" />   
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="songs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="jazz" />
+                <xs:element ref="rock" />
+                <xs:element ref="country" />
+                <xs:element ref="pop" />
+                <xs:element ref="dubstep" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="store">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="store_detail" />
+                <xs:element ref="songs" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

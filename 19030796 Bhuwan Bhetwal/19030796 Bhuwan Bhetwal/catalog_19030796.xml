@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="catalog_19030796.css" ?>
+<!DOCTYPE store SYSTEM "catalog_19030796.dtd">
+<store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_19030796.xsd" >
+    <store_detail>
+        <Name>C-Cords Music</Name>
+        <address>Dillibazar, Kathmandu</address>
+        <telephone>9815955928</telephone>
+        <website>ccordsmusic.com.np</website>
+        <email>ccordsmusic@gmail.com</email>
+        <logo/>
+    </store_detail>
+
+    <songs>
+        <jazz GenreID="jazz1">
+            <song id="J1"> 
+                <name>What a Wonderful World</name>
+                <director>Louis Armstrong</director>
+                <director_info>
+                    <age>56</age>
+                </director_info>
+                <producer>Bob Thiele</producer>
+                <writer>George Douglas</writer>
+                <released>1967</released>
+                <length>2:21</length>          
+            </song>    
+
+            <song id="J2"> 
+                <name>It Don't Mean a Thing (If It Ain't Got That Swing)</name>
+                <director>Ellington</director>
+                <director_info>
+                    <age>50</age>
+                </director_info>
+                <producer>Duke Ellington</producer>
+                <writer>Irving Mills</writer>
+                <released>1932</released>
+                <length>2:33</length>          
+            </song> 
+
+            <song id="J3"> 
+                <name>Sweet Georgia Brown</name>
+                <director>Django Reinhardt</director>
+                <director_info>
+                    <age>49</age>
+                </director_info>
+                <producer>Maceo Pinkard</producer>
+                <writer>Kenneth Casey</writer>
+                <released>1925</released>
+                <length>4:00</length>          
+            </song> 
+        </jazz>
+
+        <rock GenreID="rock1">
+            <song id="R1"> 
+                <name>Layla</name>                       
+                <director>Patti Harrison</director>
+                <director_info>
+                    <age>63</age>
+                </director_info>
+                <producer>Tom Dowd</producer>
+                <writer>Eric Clapton</writer>
+                <released>1971</released>
+                <length>7:04</length>           
+            </song>  
+
+            <song id="R2"> 
+                <name>Stairway to Heaven</name>                       
+                <director>Led Zeppelin</director>
+                <director_info>
+                    <age>67</age>
+                </director_info>
+                <producer>Jimmy Page</producer>
+                <writer>Robert Plant</writer>
+                <released>1971</released>
+                <length>8:02</length>           
+            </song> 
+
+            <song id="R3"> 
+                <name>Hey Jude</name>                       
+                <director>Paul McCartney</director>
+                <director_info>
+                    <age>71</age>
+                </director_info>
+                <producer>George Martin</producer>
+                <writer>Lennon–McCartney</writer>
+                <released>1968</released>
+                <length>7:11</length>           
+            </song>
+        </rock>
+
+        <country GenreID="country1">
+            <song id="C1"> 
+                <name>10,000 Hours</name>                       
+                <director>Warner Nashville</director>
+                <director_info>
+                    <age>46</age>
+                </director_info>
+                <producer>Dan Smyers</producer>
+                <writer>Shay Mooney</writer>
+                <released>2019</released>
+                <length>2:47</length>           
+            </song>     
+
+            <song id="C2"> 
+                <name>I Hope</name>                       
+                <director>Gabby Barrett</director>
+                <director_info>
+                    <age>68</age>
+                </director_info>
+                <producer>Ross Copperman</producer>
+                <writer>Jon Nite</writer>
+                <released>2019</released>
+                <length>3:23</length>           
+            </song>
+
+            <song id="C3"> 
+                <name>The Bones</name>                       
+                <director>Maren Morris </director>
+                <director_info>
+                    <age>56</age>
+                </director_info>
+                <producer>Greg Kurstin</producer>
+                <writer>Laura Veltz</writer>
+                <released>2019</released>
+                <length>3:17</length>           
+            </song>      
+        </country>
+        
+        <pop GenreID="pop1">
+            <song id="P1"> 
+                <name>Bad Guy</name>                       
+                <director>Dave Meyers</director>
+                <director_info>
+                    <age>69</age>
+                </director_info>
+                <producer>Finneas O'Connell</producer>
+                <writer>Billie Eilish</writer>
+                <released>2019</released>
+                <length>3:14</length>           
+            </song> 
+
+            <song id="P2"> 
+                <name>Thriller</name>                       
+                <director>John Landis</director>
+                <director_info>
+                    <age>73</age>
+                </director_info>
+                <producer>George Folsey Jr.</producer>
+                <writer>John Landis</writer>
+                <released>1983</released>
+                <length>13:42</length>           
+            </song> 
+
+            <song id="P3"> 
+                <name>Like a Prayer</name>                       
+                <director>Mary Lambert</director>
+                <director_info>
+                    <age>66</age>
+                </director_info>
+                <producer>Patrick Leonard</producer>
+                <writer> Madonna</writer>
+                <released>1989</released>
+                <length>5:19</length>           
+            </song>           
+        </pop>
+
+        <dubstep GenreID="dubstep1">
+            <song id="D1"> 
+                <name>Cinema(Skrillex Remix)</name>                        
+                <director>Benny Benassi</director>
+                <director_info>
+                    <age>55</age>
+                </director_info>
+                <producer>Marco "Benny" Benassi</producer>
+                <writer>Gary Baker</writer>
+                <released>2011</released>
+                <length>3:03 (radio edit)</length>           
+            </song>    
+
+            <song id="D2"> 
+                <name>Promises</name>                        
+                <director>Emil Nava</director>
+                <director_info>
+                    <age>39</age>
+                </director_info>
+                <producer>Nero</producer>
+                <writer>Daniel Stephens</writer>
+                <released>2011</released>
+                <length>4:17</length>           
+            </song> 
+
+            <song id="D3"> 
+                <name>Scary Monsters and Nice Sprites</name>                        
+                <director>Skrillex</director>
+                <director_info>
+                    <age>75</age>
+                </director_info>
+                <producer>Bare Noize</producer>
+                <writer>Skrillex</writer>
+                <released>2010</released>
+                <length>44:02</length>           
+            </song>        
+        </dubstep>
+    </songs>
+</store>
